@@ -1,0 +1,156 @@
+/* Style for invalid input */
+input:invalid {
+    border: 2px dashed red;
+    width: 30%;
+}
+/* Style for valid input */
+input:valid {
+    border: 2px solid black;
+    width: 30%;
+}
+body{
+    max-width: 1900px; /* Set the maximum width of the window */
+    margin: 0 auto;
+    line-height: 1.6;
+    overflow-x: hidden;
+    background: #ecb2ccb9
+}
+header {
+    background-color: #1D2951;
+    color: #fff;
+    padding: 0.1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition:color 0.3s;
+}
+header:hover {
+    color: #1D2951;
+}
+
+header h1 {
+    font-size: 2.1rem;
+    text-align: center;
+    font-family: cursive;
+}
+form{
+    text-align: left;
+    position: absolute;
+    bottom: -40%;
+    background: rgba(0, 0, 0, 0);
+    width: 100%;
+    padding: 10px;
+    margin-left: 0px;
+    flex-direction: column;
+    overflow-y:scroll;
+    overflow-x:hidden;
+}
+form button{
+    width:10%;
+    height: 8%;
+    margin-left: 5px;
+    background: linear-gradient(135deg, #b33b72, #7928CA);
+}
+myVideo {
+position: absolute;
+bottom: 0;
+right: 0;
+z-index:-1;
+min-height: 100%;
+min-height: 100%;
+}
+.content {
+position: absolute;
+background: rgba(0, 0, 0, 0);
+margin-left: 30px;
+color: #fff;
+width: 100%;
+padding: 20px;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+/* Style the overlay text */
+.content h1 {
+font-size: 52px;
+margin-bottom: 100px;
+color: #fff;
+font-family: initial;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+footer .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+}
+#scrollButton {
+background: linear-gradient(135deg, #b33b72, #7928CA);
+color: black;
+font-family: cursive;
+font-size: 18px;
+padding: 10px 20px;
+border: none;
+cursor: pointer;
+transition: color 0.3s;
+display: flex;
+margin-left: 440px;
+flex-direction: column;
+border-radius: 12px;
+}
+.custom-scrollbar {
+    position: absolute;
+    height: 1000px; /* Set your desired height */
+    text-align: right;
+    margin-left: 1100px;
+    margin-top: -1080px;
+    margin-right: 10px;
+    overflow-y: scroll; /* Enable vertical scrolling */
+    overflow-x: hidden;
+    scrollbar-width: thin; /* Hide defau scrollbar (Firefox) */
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+    width: 20px; /* Set your desired scrollbar width */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #888; /* Customize the scrollbar handle color */
+    border-radius: 5px;
+}
+.custom-scrollbar h1{
+    color: #2f055a;
+    font-family: cursive;
+}
+.custom-scrollbar h3{
+    color:#6c0332; 
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.custom-scrollbar p{
+    margin-left: 20px;
+    margin-right: 15px;
+}
+.custom-scrollbar img{
+    margin-right: 10px;
+    padding-top: 20px;
+}

@@ -1,0 +1,397 @@
+/* for body css start */
+body{
+    max-width: 1900px; /* Set the maximum width of the window */
+    margin: 0 auto;
+    line-height: 1.6;
+    overflow-x: hidden;
+    background: linear-gradient(135deg, #f8a4bc, #a857e6);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+/* for body css end */
+
+/*team css start */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+#partners{
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+::selection{
+  background-color: #7928CA;
+  color: #fff;
+}
+.containerr{
+  max-width: 950px;
+  width: 100%;
+  padding: 80px 0;
+  margin-left: -940px;
+}
+.containerr .main-card{
+  display: flex;
+  justify-content: space-evenly;
+  width: 200%;
+  transition: 1s;
+}
+#two:checked ~ .main-card{
+  margin-left: -100%;
+}
+.containerr .main-card .cards{
+  width: calc(100% / 2 - 10px);
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 20px;
+  justify-content: space-between;
+}
+.main-card .cards .cardd{
+  width: calc(100% / 3 - 10px);
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.4s ease;
+}
+.main-card .cards .cardd:hover{
+  transform: translateY(-15px);
+}
+.ha{
+    text-align: left;
+    color: #7928CA;
+    margin-top: -60px;
+    margin-bottom: 40px;
+    margin-left: 380px;
+    font-family: cursive;
+}
+.cards .cardd .contentt{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.cards .cardd .contentt .imgg{
+  height: 140px;
+  width: 165px;
+  padding: 3px;
+  background: #7928CA;
+  margin-bottom: 14px;
+}
+.cardd .contentt .imgg img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  margin-left: 0px;
+}
+.cardd .contentt .name{
+  font-size: 20px;
+  font-weight: 500;
+}
+.cardd .contentt .job{
+  font-size: 20px;
+  color: #FF676D;
+}
+.cardd .contentt .media-icons{
+  margin-top: 10px;
+  display: flex;
+
+}
+.media-icons a{
+  text-align: center;
+  line-height: 33px;
+  height: 35px;
+  width: 35px;
+  margin: 0 4px;
+  font-size: 14px;
+  color: #FFF;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  background: #FF676D;
+  transition: all 0.3s ease;
+}
+.media-icons a:hover{
+  color: #FF676D;
+  background-color: #fff;
+  border-color: #FF676D;
+}
+ .containerr .button{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.button label{
+  height: 15px;
+  width: 15px;
+  border-radius: 20px;
+  background: #fff;
+  margin: 0 4px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.button label.active{
+  width: 35px;
+}
+#one:checked ~ .button .one{
+  width: 35px;
+}
+#one:checked ~ .button .two{
+  width: 15px;
+}
+#two:checked ~ .button .one{
+  width: 15px;
+}
+#two:checked ~ .button .two{
+  width: 35px;
+}
+input[type="radio"]{
+  display: none;
+}
+ @media (max-width: 768px) {
+  .main-card .cards .cardd{
+    margin: 20px 0 10px 0;
+    width: calc(100% / 2 - 10px);
+  }
+}
+@media (max-width: 600px) {
+  .main-card .cards .cardd{
+    width: 100%;
+  }
+}
+/*team css end*/
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* for header css start */
+header {
+    background: linear-gradient(135deg, #b33b72, #7928CA);
+    color: #fff;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition:color 0.3s;
+}
+header .container:hover {
+    color: #1D2951;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    font-family: cursive;
+    margin-left: -500px;
+}
+/* for header css end */
+
+/* for nav list css start */
+nav ul {
+    list-style: none;
+    display: flex;
+    font-family: cursive;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #1D2951;
+}
+/* for nav list css end */
+
+/* for first section with get started css start */
+.hero {
+    background: url("images/bg.jpg");
+    color: #fff;
+    text-align: center;
+    padding: 4rem 1rem;
+    font-family: initial;
+}
+
+.hero h2 {
+    font-size: 2.0rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    color: #fff;
+    background-color:#7928CA;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.1s;
+    font-family: initial;
+    transition: opacity 0.3s;
+    background: linear-gradient(135deg, #b33b72, #7928CA);
+}
+.hero button:hover{
+   opacity: 0.8;
+   background: linear-gradient(135deg, #b33b72, #7928CA);
+}
+.hero a {
+    color: #fff;
+    background: linear-gradient(135deg, #b33b72, #7928CA);
+    text-decoration: none;
+}
+.hero button:hover {
+  background: linear-gradient(135deg, #b33b72, #7928CA);
+
+}
+/* for first section with get started css end */
+
+/* rest part except nav header start */
+main {
+    padding: 2rem 0;
+    background-color: #8F96A9;
+    font-family: initial;
+}
+
+main .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* rest part except nav header end */
+
+/* for features css start*/
+section {
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 40px;
+}
+
+section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    color: #7928CA;
+    font-family: cursive;
+    transition:color 0.3s;
+}
+section h2:hover {
+    color: #cd1678;
+}
+section p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+section img{
+    margin-left: 200px;
+}
+/* for features css end*/
+
+/* for contacts css start*/
+.contact h2{
+  font-size: 2.2rem;
+  transition:color 0.3s;
+}
+.contact h2:hover {
+  color: #cd1678;
+}
+.contact-form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.contact-form label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+.contact-form input, .contact-form textarea {
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%;
+}
+.contact-form button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  color: #fff;
+  background-color: #7928CA;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  font-family: initial;
+  width: 150px;
+}
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+/* for contacts css end*/
+
+/* for footer css start*/
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+footer .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* for footer css end*/
+
+/* for responsive*/
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+}
